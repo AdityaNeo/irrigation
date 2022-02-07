@@ -1,0 +1,259 @@
+
+
+// .............................................
+  // footer-section
+// .............................................
+
+
+
+
+.footer
+{
+  margin-top:8.4rem;
+
+  &__grass-picture
+  {
+  width: 100%;
+  display: inherit;
+  }
+  &__common-container
+  {
+    position: relative;
+    width: 100%;
+    padding: 0;
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+    display: block;
+    color: white;
+    margin: 0;
+    background-color: #1b7642;
+  }
+
+  &__main-container
+  {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2rem 0 4rem 0;    
+    @extend %container;
+  }
+  &__right-section
+  {
+    padding-right:2rem;
+    padding-top:4rem;
+  }
+  &__email
+  {
+    position:relative;
+    input[type="email"]
+    {
+      width:64.8rem;
+      border-radius: 3.5rem;
+      padding:1.8rem 0 1.8rem 3rem;
+      background-color: $clr-deepfoot-green;
+      font-size: 1.4rem;
+      font-weight: bold;
+      border:none;
+      margin-top:1rem;
+      outline-style: none;
+      display: block;
+      color: white;
+    }
+    input[type="email"]::placeholder
+    {
+      color:$clr-white;
+      font-weight: 100;
+    }
+  }
+  &__email-label
+  {
+    font-size:2.2rem;
+    font-weight: bold;
+  }
+  &__submit
+    {
+      position: absolute;
+      border-radius: 2rem;
+      border: none;
+      font-size: 1.6rem;
+      font-weight: 800;
+      font-family: lato;
+      padding:1.1rem 3.6rem;
+      top: 4.2rem;
+      left: 47.1rem;
+    }
+
+    // ..............................
+  &__service-container
+  {
+    display: inline-flex;
+    margin-top:2.2rem;
+    a
+    {
+      text-decoration: none;
+      color:$clr-white;
+    }
+      ul
+      {
+        list-style-type: none;
+        li
+        {
+          color:$clr-white;
+          font-size:1.4rem;
+          margin-bottom: 1.1rem;
+        }
+      }
+  }
+  &__first-list
+  {
+    ul
+    {
+      padding:0;
+      padding-right: 9.8rem;
+    }
+  }
+  &__li-on
+  {
+    font-size: 1.8rem;
+    font-family: lato;
+    font-weight: bold;
+    color:$clr-white;
+    margin-bottom: 1.7rem;
+  }
+  &__second-list
+  {
+    ul
+    {
+      padding-right: 9.6rem;
+    }
+  }
+  &__li-on
+  {
+    font-size: 1.8rem;
+    font-family: lato;
+    font-weight: bold;
+    color:$clr-white;
+    margin-bottom: 1.7rem;
+  }
+  &__third-list
+  {
+    margin-top: 3.4rem;
+    ul
+    {
+      padding-left:1.4rem;
+      // li
+      // {
+
+          // }
+    }
+  }
+  &__li-on
+  {
+    margin-bottom: 1.7rem;
+  }
+
+  &__last-container
+  {
+    margin-top: 6.5rem;
+    font-size:1.3rem;
+  }
+  &__copyright-part
+  {
+    display: inline-block;
+  }
+  &__poweredby-part
+  {
+    display: inline-block;
+    position:relative;
+    left: 13.5rem;
+  }
+  &__dwn-up
+  {
+    text-align: right;
+  }
+
+      // ......................................
+
+  &__contact-container
+  {
+    background-color:$clr-foot-light-green;
+    padding:2rem 4rem 0 4rem;
+    margin:0;
+    a
+    {
+      text-decoration: none;
+      color:$clr-white;
+    }
+    ul
+    {
+      list-style-type:none;
+      padding:0;
+      margin:0;
+    }
+  }
+  &__contact-detail
+  {
+    width:27rem;
+    display:inline-block;
+    h3
+    {
+      display: inline-block;
+      font-size:18px; font-weight: bold;  padding-bottom:0; margin-bottom: 3px;
+    }
+    a
+    {
+      font-size:14px; font-weight: bold;  margin-top:3px;
+      display: block;
+    }
+    hr
+    {
+      border-color: $clr-foot-hr-green;
+      outline: none;
+    }
+
+  }
+  &__logo
+  {
+    display: inline-block;
+    position: relative;
+    right: 1.6rem;
+    margin:0;
+    padding:0;
+  }
+  &__contact-detail--mid
+  {
+    position: relative;
+    right:0;
+    left:1.8rem;
+  }
+  &__contact-detail--last
+  {
+    position: relative;
+    right:0;
+  }
+  &__social-handle
+  {
+    margin:4rem 0 0 0;
+    ul
+    {
+      list-style-type: none;
+      li
+      {
+        display: inline-block;
+        font-size:1.5rem;
+        margin-left:1rem;
+      }
+    }
+  }
+  &__followus
+  {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-left:0;
+    padding:0 1rem 0 0;
+    border-right:1px solid #488964;
+  }
+}   
+
+
+
