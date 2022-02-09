@@ -96,9 +96,9 @@
 // .............................................
     // product banner page
 // .............................................
-.product{
+.manage-develop{
   position: relative;
-  margin-top: 13.5rem;
+  margin-top: 13.3rem;
   display: flex;
   flex-wrap: wrap; 
   @extend %container;
@@ -106,10 +106,10 @@
   &__banner
   {
     margin-left:5.9rem;
-    margin-top:10.4rem;
+    // margin-top:10.4rem;
     // padding: 0.25rem 0.5rem;
-    display: inline-grid;
-    padding: 1.012px;
+    // display: inline-grid;
+    // padding: 1.012px;
   }
   &__title{
     display: inline-block;
@@ -118,33 +118,35 @@
     font-weight: 900;
     color:$clr-lightgrey;
     margin-bottom: 1.3rem;
-    margin-left:12.1rem;
-    padding: 0 0.35rem;
+    margin-left: 11.1rem;
+    // padding: 0 0.35rem;
+    margin-top: 0;
     
 
   }
   &__subtitle{
-    display: inline-block;
+    // display: inline-block;
     font-size: 4.3rem;
     text-transform: uppercase;
-    font-weight: bolder;
+    font-weight: 900;
     font-family: lato ;
     color:$clr-lightgrey;
     margin-top:1.3rem;
-    margin-left:23.6rem;
-    padding:0 0.5rem;
-
+    // margin-left:23.6rem;
+    // padding:0 0.5rem;
+    text-align: center;
+    margin-bottom:0;
   }
-  &__poster{
-    img{
+  &__vidc-logo{
+    // img{
       position: absolute;
       height:16.9rem;
       width:18.2rem;
-      position: absolute;
-      top: 10.2rem;
+      top: 0.2rem;
       right: 9.2rem;
+      margin:0;
 
-    }
+    // }
   }
   
   
@@ -157,7 +159,7 @@
 // .............................................
     // product-category page
 // .............................................
-  .product-category
+  .services
   {
     
    background: linear-gradient(#FFFFFF,#E6E6E6);
@@ -165,45 +167,52 @@
     &__list
     {
       display: flex;
-      /* margin-top: 10rem; */
-      justify-content: space-evenly;
       flex-wrap: wrap;
       align-items: center;
-      /* margin: 10rem auto; */
-      /* padding: 2rem 1rem 2rem 3rem; */
-      padding: 10.2rem 2rem;
+      // padding: 11.2rem 2rem;
+      padding:11.3rem 2rem 12.2rem 2rem;
       @extend %container;   
       img
       {
         height:7.5rem;
         width:7.5rem;
       }
-      figure
-      {
-        text-align: center;
-        // margin: 1rem 5.3rem;
-        margin: 1rem 3rem;
-        a
-        {
-          text-decoration: none;
-          color:$clr-lightgrey;
-          font-weight: 600;
-        }
-      }
+      // figure
+
 
     
+    }
+    &__content
+    {
+      text-align: center;
+      margin: 0;
+      width: 10rem;
+      display: flex;
+      /* justify-content: space-evenly; */
+      margin: 0 4.3rem;
+      a{
+        text-decoration: none;
+        color:$clr-lightgrey;
+        font-weight: 600;
+        display: inline-block;
+
+      }
     }
     &__item
     {
       font-size: 1.6rem;
       font-weight: bolder;
-      width: 9rem;
+      // width: 9rem;
       display: block;
       text-align: center;
       // padding-top: 2rem;
-      padding-left: 0.45rem;
+      // padding-left: 0.45rem;
       padding-top: 1.6rem;
-      padding-right: 0.45rem;
+      // padding-right: 0.45rem;
+    }
+    &__content--irrigation
+    {
+      margin-left: 13.2rem;
     }
   
   }

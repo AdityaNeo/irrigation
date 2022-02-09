@@ -13,12 +13,19 @@
 .header
 {
   // margin-top: 1.3rem;
-  display: flex;
-  flex-wrap: wrap;
-  padding: 1.6rem 0 1.9rem 0;
-  @extend %container;
+
+  box-shadow: inset 0px -7px 9px -8px $clr-lightgrey;
+  z-index: 1;
+
   @at-root 
   {
+   &__common-container
+   {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1.6rem 0 1.9rem 0;
+    @extend %container;
+   }
    &__logo
     {   
       a{
@@ -106,7 +113,7 @@
   {
   height: 1.43rem;
   width:1.35rem;
-  padding-left: 0.5rem;
+  // padding-left: 0.5rem;
   }
   &__link-aboutus
   {
@@ -144,7 +151,10 @@
   &__dot--blue-dot{background-color:$clr-blue;}
   &__dot--green-dot{background-color: $clr-green;}
   &__dot--yellow-dot{background-color: $clr-yellow;}
-
+  &__search-logo
+  {
+    padding-left: 0.5rem;
+  }
 
 
   //............. bottom links................

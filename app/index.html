@@ -25,6 +25,7 @@
 <body>
   <!-- header -->
   <header class="header">
+    <div class="header__common-container">
     <div class="header__logo">
       <a href="#" class="header__logo-link"><img src="./images/brandlogo.png" alt="brandlogo"></a>
     </div>
@@ -62,7 +63,7 @@
             </a>
           </li>
 
-          <li><a href="" ><img src="./images/search-logo.png" alt="search-logo" class="header__search-icon"></a></i></li>
+          <li class="header__search-logo"><a href="" ><img src="./images/search-logo.png" alt="search-logo" class="header__search-icon"></a></i></li>
 
         </ul>
       </div>
@@ -85,7 +86,7 @@
 
 
     </nav>
-
+  </div>
   </header>
 
 
@@ -121,62 +122,63 @@
 
 
 
-    <section class="product">
-      <div class="product__banner">
-        <div class="product__title">
+    <section class="manage-develop">
+      <div class="manage-develop__banner">
+        <h2 class="manage-develop__title">
           manage & Develop
-        </div>
+        </h2>
         <img src="./images/irrigation-banner.png" alt="irrigation_image">
 
-        <div class="product__subtitle">
+        <h2 class="manage-develop__subtitle">
           In vidarbha, maharashtra
-        </div>
+        </h2>
 
       </div>
-      <figure class="product__poster">
+      <figure class="manage-develop__vidc-logo">
         <img src="./images/vidc-brand-logo.png" alt="vidc_brand_logo">
       </figure>
 
     </section>
 
-    <section class="product-category">
+    <section class="services">
 
-      <div class="product-category__list">
-        <figure>
+      <div class="services__list">
+
+        <div class="services__content services__content--irrigation">
           <a href="#">
             <img src="./images/hydro-irrigation.png" alt="hydro_irrigation">
-            <figcaption class="product-category__item">HYDRO IRRIGATION</figcaption>
+            <div class="services__item product-category">HYDRO IRRIGATION</div>
           </a>
+        </div>
 
-        </figure>
-        <figure>
+        <div class="services__content">
           <a href="#">
             <img src="./images/hydro-electricity.png" alt="hydro-electricity">
-            <figcaption class="product-category__item">HYDRO ELECTRICITY</figcaption>
+            <div class="services__item">HYDRO ELECTRICITY</div>
           </a>
+        </div>
 
-        </figure>
-        <figure>
+        <div class="services__content ">
           <a href="#">
             <img src="./images/agr-devlopment_green.png" alt="agr-devlopment_green">
-            <figcaption class="product-category__item">AGRICULTURAL DEVELOPMENT</figcaption>
+            <div class="services__item">AGRICULTURAL DEVELOPMENT</div>
           </a>
+        </div>
 
-        </figure>
-        <figure>
+        <div class="services__content">
           <a href="#">
             <img src="./images/agr-devlopment_plant.png" alt="agr-devlopment_plant">
-            <figcaption class="product-category__item">AGRICULTURAL DEVELOPMENT</figcaption>
+            <div class="services__item">AGRICULTURAL DEVELOPMENT</div>
           </a>
+        </div>
 
-        </figure>
-        <figure>
+        <div class="services__content">
           <a href="#">
             <img src="./images/sprinkler-irrigation.png" alt="sprinkler-irrigation">
-            <figcaption class="product-category__item">SPRINKLER IRRIGATION</figcaption>
+            <div class="services__item">SPRINKLER IRRIGATION</div>
           </a>
+        </div>
 
-        </figure>
       </div>
 
 

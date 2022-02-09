@@ -11,7 +11,7 @@ body {
   margin: 0;
 }
 
-.footer__main-container, .vidc__description-container, .product-category .product-category__list, .product, .banner__container, .header {
+.footer__main-container, .vidc__description-container, .services__list, .manage-develop, .banner__container, .header__common-container {
   max-width: 1125px;
   width: 100%;
   margin: 0 auto;
@@ -19,10 +19,15 @@ body {
 }
 
 .header {
+  box-shadow: inset 0px -7px 9px -8px #505050;
+  z-index: 1;
+}
+.header__common-container {
   display: flex;
   flex-wrap: wrap;
   padding: 1.6rem 0 1.9rem 0;
 }
+
 .header__logo a {
   display: inline-block;
 }
@@ -93,7 +98,6 @@ body {
 .header__search-icon {
   height: 1.43rem;
   width: 1.35rem;
-  padding-left: 0.5rem;
 }
 
 .header__link-aboutus {
@@ -134,6 +138,10 @@ body {
 
 .header__dot--yellow-dot {
   background-color: #F2E162;
+}
+
+.header__search-logo {
+  padding-left: 0.5rem;
 }
 
 .header__bottom-links {
@@ -232,83 +240,80 @@ body {
   padding: 1.15rem 0.7rem;
 }
 
-.product {
+.manage-develop {
   position: relative;
-  margin-top: 13.5rem;
+  margin-top: 13.3rem;
   display: flex;
   flex-wrap: wrap;
 }
-.product__banner {
+.manage-develop__banner {
   margin-left: 5.9rem;
-  margin-top: 10.4rem;
-  display: inline-grid;
-  padding: 1.012px;
 }
-.product__title {
+.manage-develop__title {
   display: inline-block;
   font-size: 4.3rem;
   text-transform: uppercase;
   font-weight: 900;
   color: #505050;
   margin-bottom: 1.3rem;
-  margin-left: 12.1rem;
-  padding: 0 0.35rem;
+  margin-left: 11.1rem;
+  margin-top: 0;
 }
-.product__subtitle {
-  display: inline-block;
+.manage-develop__subtitle {
   font-size: 4.3rem;
   text-transform: uppercase;
-  font-weight: bolder;
+  font-weight: 900;
   font-family: lato;
   color: #505050;
   margin-top: 1.3rem;
-  margin-left: 23.6rem;
-  padding: 0 0.5rem;
+  text-align: center;
+  margin-bottom: 0;
 }
-.product__poster img {
+.manage-develop__vidc-logo {
   position: absolute;
   height: 16.9rem;
   width: 18.2rem;
-  position: absolute;
-  top: 10.2rem;
+  top: 0.2rem;
   right: 9.2rem;
+  margin: 0;
 }
 
-.product-category {
+.services {
   background: linear-gradient(#FFFFFF, #E6E6E6);
 }
-.product-category .product-category__list {
+.services__list {
   display: flex;
-  /* margin-top: 10rem; */
-  justify-content: space-evenly;
   flex-wrap: wrap;
   align-items: center;
-  /* margin: 10rem auto; */
-  /* padding: 2rem 1rem 2rem 3rem; */
-  padding: 10.2rem 2rem;
+  padding: 11.3rem 2rem 12.2rem 2rem;
 }
-.product-category .product-category__list img {
+.services__list img {
   height: 7.5rem;
   width: 7.5rem;
 }
-.product-category .product-category__list figure {
+.services__content {
   text-align: center;
-  margin: 1rem 3rem;
+  margin: 0;
+  width: 10rem;
+  display: flex;
+  /* justify-content: space-evenly; */
+  margin: 0 4.3rem;
 }
-.product-category .product-category__list figure a {
+.services__content a {
   text-decoration: none;
   color: #505050;
   font-weight: 600;
+  display: inline-block;
 }
-.product-category .product-category__list .product-category__item {
+.services__item {
   font-size: 1.6rem;
   font-weight: bolder;
-  width: 9rem;
   display: block;
   text-align: center;
-  padding-left: 0.45rem;
   padding-top: 1.6rem;
-  padding-right: 0.45rem;
+}
+.services__content--irrigation {
+  margin-left: 13.2rem;
 }
 
 .vidc {
