@@ -124,6 +124,23 @@
     
 
   }
+  &__irrigation-text
+  {
+    
+      margin: 0;
+      font-size: 11rem;
+      font-weight: 900;
+      padding: 0;
+      line-height: 1;
+      background-image: url(../../images/farm-banner.jpg);
+      font-family: sans-serif;
+      color: transparent;
+      -webkit-background-clip: text;
+      background-clip: text;
+      background-size: cover;
+      background-position: 1rem -6rem;
+  
+  }
   &__subtitle{
     // display: inline-block;
     font-size: 4.3rem;

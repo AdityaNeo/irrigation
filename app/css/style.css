@@ -19,8 +19,9 @@ body {
 }
 
 .header {
-  box-shadow: inset 0px -7px 9px -8px #505050;
+  box-shadow: 0px 3px 6px 0 #00000038;
   z-index: 1;
+  position: relative;
 }
 .header__common-container {
   display: flex;
@@ -250,7 +251,6 @@ body {
   margin-left: 5.9rem;
 }
 .manage-develop__title {
-  display: inline-block;
   font-size: 4.3rem;
   text-transform: uppercase;
   font-weight: 900;
@@ -259,6 +259,20 @@ body {
   margin-left: 11.1rem;
   margin-top: 0;
 }
+.manage-develop__irrigation-text {
+  margin: 0;
+  font-size: 11rem;
+  font-weight: 900;
+  padding: 0;
+  line-height: 1;
+  background-image: url(../../images/farm-banner.jpg);
+  font-family: sans-serif;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  background-size: cover;
+  background-position: 1rem -6rem;
+}
 .manage-develop__subtitle {
   font-size: 4.3rem;
   text-transform: uppercase;
@@ -266,8 +280,8 @@ body {
   font-family: lato;
   color: #505050;
   margin-top: 1.3rem;
-  text-align: center;
   margin-bottom: 0;
+  margin-left: 23.3rem;
 }
 .manage-develop__vidc-logo {
   position: absolute;
@@ -286,6 +300,7 @@ body {
   flex-wrap: wrap;
   align-items: center;
   padding: 11.3rem 2rem 12.2rem 2rem;
+  justify-content: center;
 }
 .services__list img {
   height: 7.5rem;
@@ -296,7 +311,6 @@ body {
   margin: 0;
   width: 10rem;
   display: flex;
-  /* justify-content: space-evenly; */
   margin: 0 4.3rem;
 }
 .services__content a {
@@ -312,8 +326,8 @@ body {
   text-align: center;
   padding-top: 1.6rem;
 }
-.services__content--irrigation {
-  margin-left: 13.2rem;
+.services__content--devlopment {
+  width: 12rem;
 }
 
 .vidc {
