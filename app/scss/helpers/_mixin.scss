@@ -8,3 +8,7 @@
   padding:0 15px;
   
   }
+  @mixin background-image($imgName,$extension)
+  {
+    background-image: url(../../images/#{$imgName}#{$extension});
+  }

@@ -3,13 +3,10 @@
 // .............................................
   // footer-section
 // .............................................
-
-
-
-
 .footer
 {
   margin-top:8.4rem;
+
 
   &__grass-picture
   {
@@ -47,22 +44,27 @@
     position:relative;
     input[type="email"]
     {
-      width:64.8rem;
       border-radius: 3.5rem;
-      padding:1.8rem 0 1.8rem 3rem;
-      background-color: $clr-deepfoot-green;
+      padding: 1.5rem 20.7rem 1.5rem 1.8rem;
+      background-color: #186A3B;
       font-size: 1.4rem;
       font-weight: bold;
-      border:none;
-      margin-top:1rem;
+      border: none;
+      margin-top: 1rem;
       outline-style: none;
       display: block;
       color: white;
+      width: 447px;
+      // height: 4.6rem;
+
     }
     input[type="email"]::placeholder
     {
       color:$clr-white;
       font-weight: 100;
+      // padding-left:4rem;
+      // margin-left:4rem;
+      
     }
   }
   &__email-label
@@ -78,9 +80,10 @@
       font-size: 1.6rem;
       font-weight: 800;
       font-family: lato;
-      padding:1.1rem 3.6rem;
-      top: 4.2rem;
-      left: 47.1rem;
+      // padding: 0.75rem 2.45rem;
+      padding:0.85rem 3.05rem;
+      top: 4.3rem;
+      left: 47.2rem;
     }
 
     // ..............................
@@ -88,10 +91,12 @@
   {
     display: inline-flex;
     margin-top:2.2rem;
+    font-family:syne;
     a
     {
       text-decoration: none;
       color:$clr-white;
+      font-family:syne;
     }
       ul
       {
@@ -115,7 +120,7 @@
   &__li-on
   {
     font-size: 1.8rem;
-    font-family: lato;
+    // font-family: lato;
     font-weight: bold;
     color:$clr-white;
     margin-bottom: 1.7rem;
@@ -130,7 +135,7 @@
   &__li-on
   {
     font-size: 1.8rem;
-    font-family: lato;
+    // font-family: lato;
     font-weight: bold;
     color:$clr-white;
     margin-bottom: 1.7rem;
@@ -141,10 +146,6 @@
     ul
     {
       padding-left:1.4rem;
-      // li
-      // {
-
-          // }
     }
   }
   &__li-on

@@ -19,9 +19,9 @@ body {
 }
 
 .header {
-  box-shadow: 0px 3px 6px 0 #00000038;
-  z-index: 1;
   position: relative;
+  z-index: 1;
+  box-shadow: 0px 3px 6px 0 #00000038;
 }
 .header__common-container {
   display: flex;
@@ -34,10 +34,10 @@ body {
 }
 
 .header__container {
-  margin: 0 0 0 auto;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+  margin: 0 0 0 auto;
   padding: 0;
 }
 
@@ -69,28 +69,28 @@ body {
 .header__top-links ul li .header__small-letter {
   font-size: 12px;
   font-weight: bold;
-  padding: 0 0 0 2.4rem;
   font-family: "Fira Sans", sans-serif;
+  padding: 0 0 0 2.4rem;
 }
 .header__top-links ul li .header__normal-letter {
   font-size: 14px;
   font-weight: bold;
-  padding: 0 0 0 1rem;
   font-family: "Fira Sans", sans-serif;
+  padding: 0 0 0 1rem;
 }
 .header__top-links ul li .header__large-letter {
   font-size: 16px;
   font-weight: bold;
-  padding: 0 1.8rem 0 1.6rem;
-  border-right: 0.1rem solid #265781;
   font-family: "Fira Sans", sans-serif;
+  border-right: 0.1rem solid #265781;
+  padding: 0 1.8rem 0 1.6rem;
 }
 .header__top-links ul select {
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Fira Sans", sans-serif;
   border: none;
   padding: 0 0 0 1.15rem;
-  font-family: "Fira Sans", sans-serif;
-  font-weight: 400;
-  font-size: 14px;
 }
 .header__top-links ul select:focus {
   outline-style: none;
@@ -119,10 +119,10 @@ body {
 }
 
 .header__dot {
+  display: inline-block;
   height: 1.5rem;
   width: 1.5rem;
   border-radius: 50%;
-  display: inline-block;
 }
 
 .header__dot-link {
@@ -184,56 +184,56 @@ body {
 }
 .banner__container {
   position: absolute;
+  right: 0;
   bottom: 6.7rem;
+  left: 0;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   color: goldenrod;
   width: 100%;
-  left: 0;
-  right: 0;
 }
 
 .banner__head {
-  margin: 0 0 0 0;
   font-size: 5.7rem;
-  background-color: #1B7642;
-  padding: 0.25rem 2.2rem 0.25rem 1.3rem;
   font-weight: 800;
-  color: white;
   letter-spacing: 2px;
   line-height: 1;
+  color: white;
+  background-color: #1B7642;
+  margin: 0 0 0 0;
+  padding: 0.25rem 2.2rem 0.25rem 1.3rem;
 }
 
 .banner__title {
   font-size: 3.5rem;
-  background-color: #0F5C30;
   font-weight: 900;
   color: white;
+  background-color: #0F5C30;
   margin: 0.6rem 0 0 0;
   padding: 1.2rem 2.1rem 1.2rem 2.1rem;
 }
 
 .banner__detail-link {
   text-decoration: none;
-  margin-top: 4.7rem;
-  font-size: 2.2rem;
-  background-color: white;
   text-align: center;
-  padding: 1rem 2.1rem 1rem 2.1rem;
-  color: black;
+  font-size: 2.2rem;
   font-weight: 400;
+  color: black;
+  background-color: white;
+  margin-top: 4.7rem;
+  padding: 1rem 2.1rem 1rem 2.1rem;
 }
 
 .banner__pagedown-outer-box {
   position: absolute;
-  background-color: #1B7642;
+  top: 47.8rem;
   left: 50%;
   right: 50%;
-  top: 47.8rem;
-  padding: 2.5rem 4rem;
+  background-color: #1B7642;
   display: flex;
   justify-content: center;
+  padding: 2.5rem 4rem;
 }
 
 .banner__pagedown-inner-box {
@@ -243,86 +243,82 @@ body {
 
 .manage-develop {
   position: relative;
-  margin-top: 13.3rem;
   display: flex;
   flex-wrap: wrap;
+  margin-top: 13.6rem;
 }
-.manage-develop__banner {
+.manage-develop__container {
   margin-left: 5.9rem;
 }
 .manage-develop__title {
   font-size: 4.3rem;
-  text-transform: uppercase;
   font-weight: 900;
+  text-transform: uppercase;
   color: #505050;
-  margin-bottom: 1.3rem;
-  margin-left: 11.1rem;
-  margin-top: 0;
+  margin: 0 0 0 11.1rem;
 }
 .manage-develop__irrigation-text {
-  margin: 0;
-  font-size: 11rem;
+  display: inline-block;
+  font-size: 13.1rem;
   font-weight: 900;
-  padding: 0;
-  line-height: 1;
   background-image: url(../../images/farm-banner.jpg);
-  font-family: sans-serif;
   color: transparent;
   -webkit-background-clip: text;
   background-clip: text;
   background-size: cover;
   background-position: 1rem -6rem;
+  line-height: 1;
+  letter-spacing: -4px;
+  margin: 0;
+  padding: 0;
 }
 .manage-develop__subtitle {
   font-size: 4.3rem;
-  text-transform: uppercase;
   font-weight: 900;
   font-family: lato;
+  text-transform: uppercase;
   color: #505050;
-  margin-top: 1.3rem;
-  margin-bottom: 0;
-  margin-left: 23.3rem;
+  margin: 0 0 0 23.3rem;
 }
 .manage-develop__vidc-logo {
   position: absolute;
+  top: 0.2rem;
+  left: 89.4rem;
   height: 16.9rem;
   width: 18.2rem;
-  top: 0.2rem;
-  right: 9.2rem;
   margin: 0;
 }
 
 .services {
-  background: linear-gradient(#FFFFFF, #E6E6E6);
+  background: linear-gradient(#FFFFFF, #e6e6e685);
 }
 .services__list {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   align-items: center;
   padding: 11.3rem 2rem 12.2rem 2rem;
-  justify-content: center;
 }
 .services__list img {
   height: 7.5rem;
   width: 7.5rem;
 }
 .services__content {
-  text-align: center;
-  margin: 0;
-  width: 10rem;
   display: flex;
+  width: 10rem;
+  text-align: center;
   margin: 0 4.3rem;
 }
 .services__content a {
-  text-decoration: none;
-  color: #505050;
-  font-weight: 600;
   display: inline-block;
+  text-decoration: none;
+  font-weight: 600;
+  color: #505050;
 }
 .services__item {
-  font-size: 1.6rem;
-  font-weight: bolder;
   display: block;
+  font-size: 1.6rem;
+  font-weight: 900;
   text-align: center;
   padding-top: 1.6rem;
 }
@@ -331,25 +327,23 @@ body {
 }
 
 .vidc {
-  background-color: #3F3531;
   position: relative;
-  width: 100%;
   height: 52rem;
-  margin-bottom: 8.2rem;
-  background-image: url("../images/greybackground.png");
-  background-repeat: no-repeat;
-  padding: 0;
-  margin: 0;
   width: 100%;
+  background-color: #3F3531;
+  background-image: url(../../images/greybackground.png);
+  background-repeat: no-repeat;
+  margin-bottom: 0 0 8.2rem 0;
+  padding: 0;
 }
 .vidc__description-container {
-  display: flex;
-  flex-wrap: wrap;
   position: absolute;
   right: 0;
   left: 0;
   bottom: 7.7rem;
-  padding-top: 0px;
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 0;
 }
 .vidc__video-picture {
   height: 35.2rem;
@@ -364,40 +358,40 @@ body {
 .vidc__videobtn {
   height: 10rem;
   width: 10rem;
+  border: none;
   border-radius: 8rem;
   background-color: #44AF72;
-  border: none;
   outline: 1px solid #0F5C30;
 }
 .vidc__about-information {
   display: inline-block;
-  color: white;
-  font-size: 1.6rem;
   width: 39.3rem;
-  margin-left: 8.5rem;
+  font-size: 1.6rem;
   line-height: 2.25rem;
+  color: white;
+  margin-left: 8.5rem;
   padding: 0.75rem 0.1rem;
 }
 .vidc__about-information a {
   display: inline-block;
   text-decoration: none;
-  background-color: #44AF72;
-  color: white;
   font-size: 2.2rem;
-  padding: 1rem 2.15rem;
   line-height: initial;
+  color: white;
+  background-color: #44AF72;
+  padding: 1rem 2.15rem;
 }
 .vidc__about-description {
   display: inline-block;
-  padding-bottom: 4.6rem;
   margin: 1.4rem 0 0 0;
+  padding-bottom: 4.6rem;
 }
 .vidc__about-heading {
+  display: inline-block;
   font-size: 3.6rem;
   font-weight: 800;
-  margin: 0;
   line-height: 1.2;
-  display: inline-block;
+  margin: 0;
   padding: 0 0.1rem;
 }
 
@@ -433,9 +427,8 @@ body {
   position: relative;
 }
 .footer__email input[type=email] {
-  width: 64.8rem;
   border-radius: 3.5rem;
-  padding: 1.8rem 0 1.8rem 3rem;
+  padding: 1.5rem 20.7rem 1.5rem 1.8rem;
   background-color: #186A3B;
   font-size: 1.4rem;
   font-weight: bold;
@@ -444,6 +437,7 @@ body {
   outline-style: none;
   display: block;
   color: white;
+  width: 447px;
 }
 .footer__email input[type=email]::placeholder {
   color: white;
@@ -460,17 +454,19 @@ body {
   font-size: 1.6rem;
   font-weight: 800;
   font-family: lato;
-  padding: 1.1rem 3.6rem;
-  top: 4.2rem;
-  left: 47.1rem;
+  padding: 0.85rem 3.05rem;
+  top: 4.3rem;
+  left: 47.2rem;
 }
 .footer__service-container {
   display: inline-flex;
   margin-top: 2.2rem;
+  font-family: syne;
 }
 .footer__service-container a {
   text-decoration: none;
   color: white;
+  font-family: syne;
 }
 .footer__service-container ul {
   list-style-type: none;
@@ -486,7 +482,6 @@ body {
 }
 .footer__li-on {
   font-size: 1.8rem;
-  font-family: lato;
   font-weight: bold;
   color: white;
   margin-bottom: 1.7rem;
@@ -496,7 +491,6 @@ body {
 }
 .footer__li-on {
   font-size: 1.8rem;
-  font-family: lato;
   font-weight: bold;
   color: white;
   margin-bottom: 1.7rem;
@@ -593,4 +587,9 @@ body {
   margin-left: 0;
   padding: 0 1rem 0 0;
   border-right: 1px solid #488964;
+}
+
+@font-face {
+  src: url(../../../SyneTactile-Regular.ttf);
+  font-family: syne;
 }
