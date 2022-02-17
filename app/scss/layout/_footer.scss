@@ -61,7 +61,8 @@
     input[type="email"]::placeholder
     {
       color:$clr-white;
-      font-weight: 100;
+      font-weight: 400;
+      font-family: lato;
       // padding-left:4rem;
       // margin-left:4rem;
       
@@ -91,12 +92,14 @@
   {
     display: inline-flex;
     margin-top:2.2rem;
-    font-family:syne;
+    // font-family:sfcompact;
+    font-family:$font-sf-compact;
     a
     {
       text-decoration: none;
       color:$clr-white;
-      font-family:syne;
+      display: inline-block;
+      // font-family:sfcompact;
     }
       ul
       {
@@ -104,7 +107,7 @@
         li
         {
           color:$clr-white;
-          font-size:1.4rem;
+          // font-size:1.4rem;
           margin-bottom: 1.1rem;
         }
       }
@@ -120,25 +123,24 @@
   &__li-on
   {
     font-size: 1.8rem;
-    // font-family: lato;
+    // font-family:sfcompact;
     font-weight: bold;
     color:$clr-white;
     margin-bottom: 1.7rem;
+    letter-spacing: 1px;
   }
+  &__li-off
+  {
+    font-size: 1.4rem;
+  }
+
   &__second-list
   {
     ul
     {
       padding-right: 9.6rem;
+
     }
-  }
-  &__li-on
-  {
-    font-size: 1.8rem;
-    // font-family: lato;
-    font-weight: bold;
-    color:$clr-white;
-    margin-bottom: 1.7rem;
   }
   &__third-list
   {
@@ -146,11 +148,11 @@
     ul
     {
       padding-left:1.4rem;
+      li
+      {
+        font-size:1.4rem;
+      }
     }
-  }
-  &__li-on
-  {
-    margin-bottom: 1.7rem;
   }
 
   &__last-container

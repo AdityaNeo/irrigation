@@ -10,5 +10,5 @@
   }
   @mixin background-image($imgName,$extension)
   {
-    background-image: url(../../images/#{$imgName}#{$extension});
+    background-image: url(#{$img-path}#{$imgName}#{$extension});
   }

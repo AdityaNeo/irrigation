@@ -1,314 +1,305 @@
 
 
+// main-banner page
 
-    // main-banner page
-
-    .banner
+.banner
+{
+  // margin-bottom: 6.1em;
+  position:relative; 
+  img
+  {
+    width:100%;
+    height: 52rem;
+  }
+  @at-root
+  {
+    &__container
     {
-      // margin-bottom: 6.1em;
-      position:relative; 
-      img
-      {
-        width:100%;
-        height: 52rem;
-      }
-      @at-root
-      {
-    
-        &__container
-        {
-          position:absolute;
-          right:0;
-          bottom: 6.7rem;
-          left:0;
-          display: flex;
-          flex-direction: column;
-          align-items: flex-start;
-          color:$clr-goldenrod;
-          width:100%;
-    
-          @extend %container; 
-        }
-    
-        &__head
-        {    
-          font-size: 5.7rem;
-          font-weight: 800;
-          letter-spacing: 2px;
-          line-height: 1;
-          color: white;
-          background-color: #1B7642;
-          margin: 0 0 0 0;
-          padding: 0.25rem 2.2rem 0.25rem 1.3rem;
-        }
-    
-        &__title
-        {     
-          font-size: 3.5rem;
-          font-weight: 900;
-          color: $clr-white;
-          background-color: $clr-deepdeep-green;
-          margin:0.6rem 0 0 0;
-          padding:1.2rem 2.1rem 1.2rem 2.1rem;  
-        }
-    
-        &__detail-link
-        {     
-          text-decoration: none;
-          text-align: center;
-          font-size: 2.2rem;
-          font-weight: 400;
-          color: $clr-black;
-          background-color: $clr-white;
-          margin-top: 4.7rem;
-          padding: 1rem 2.1rem 1rem 2.1rem;
-        }
-    
-        &__pagedown-outer-box
-        {
-          position: absolute;
-          top: 47.8rem;
-          left: 50%;
-          right: 50%;
-          background-color:  $clr-lightdeep-green;
-          display: flex;
-          justify-content: center;
-          padding: 2.5rem 4rem;
-        }
-        &__pagedown-inner-box
-        {
-          border:3px solid $clr-white;
-          padding:1.15rem 0.7rem;
-          // border-bottom: 3px solid $clr-white;
-          // padding: 0.7rem 0.7rem;
-          // transform: rotate(45deg);
-          // border-right: 3px solid $clr-white;
-        }
-      }
-    
-    }
-    
-    
-    
-    
-        // product banner page
-    
-    .manage-develop
-    {
-      position: relative;
+      position:absolute;
+      right:0;
+      bottom: 6.7rem;
+      left:0;
       display: flex;
-      flex-wrap: wrap;
-      margin-top: 13.6rem;
-    
-      @extend %container;
-        
-      &__container
-      {
-        margin-left:5.9rem;
-      }
-    
-      &__title
-      {
-        font-size: 4.3rem;
-        font-weight: 900;
-        text-transform: uppercase;
-        color:$clr-lightgrey;
-        // margin:0 0 1.8rem 11.1rem;
-        margin:0 0 0 11.1rem;
-    
-      }
-    
-      &__irrigation-text
-      {
-        display: inline-block;
-        font-size:13.1rem;
-        font-weight: 900;
-        // background-image: url(../../images/farm-banner.jpg);
-        @include background-image("farm-banner",".jpg");
-        color: transparent;
-        -webkit-background-clip: text;
-        background-clip: text;
-        background-size: cover;
-        background-position: 1rem -6rem;
-        line-height: 1;
-        letter-spacing: -4px;
-        margin: 0;
-        padding: 0;
-      }
-    
-      &__subtitle
-      {
-        font-size: 4.3rem;
-        font-weight: 900;
-        font-family: lato ;
-        text-transform: uppercase;
-        color:$clr-lightgrey;
-        // margin:1.8rem 0 0 23.3rem;
-        margin:0 0 0 23.3rem;
-      }
-    
-      &__vidc-logo
-      {
-        position: absolute;
-        top: 0.2rem;
-        left:89.4rem;
-        height:16.9rem;
-        width:18.2rem;
-        margin:0;
-      }
-     
+      flex-direction: column;
+      align-items: flex-start;
+      color:$clr-goldenrod;
+      width:100%;
+      @extend %container; 
     }
+    
+    &__head
+    {    
+      font-size: 5.7rem;
+      font-weight: 800;
+      letter-spacing: 2px;
+      line-height: 1;
+      color: white;
+      background-color: #1B7642;
+      margin: 0 0 0 0;
+      padding: 0.25rem 2.2rem 0.25rem 1.3rem;
+    }
+    
+    &__title
+    {     
+      font-size: 3.5rem;
+      font-weight: 900;
+      color: $clr-white;
+      background-color: $clr-deepdeep-green;
+      margin:0.6rem 0 0 0;
+      padding:1.2rem 2.1rem 1.2rem 2.1rem;  
+    }
+    
+    &__detail-link
+    {     
+      text-decoration: none;
+      text-align: center;
+      font-size: 2.2rem;
+      font-weight: 400;
+      color: $clr-black;
+      background-color: $clr-white;
+      margin-top: 4.7rem;
+      padding: 1rem 2.1rem 1rem 2.1rem;
+    }
+    
+    &__pagedown-outer-box
+    {
+      position: absolute;
+      top: 47.8rem;
+      left: 50%;
+      right: 50%;
+      background-color:  $clr-lightdeep-green;
+      display: flex;
+      justify-content: center;
+      padding: 2.5rem 4rem;
+    }
+
+    &__pagedown-inner-box
+    {
+      border:3px solid $clr-white;
+      padding:1.15rem 0.7rem;
+      // border-bottom: 3px solid $clr-white;
+      // padding: 0.7rem 0.7rem;
+      // transform: rotate(45deg);
+      // border-right: 3px solid $clr-white;
+    }
+  }
+    
+}
+    
+    
+    
+    
+// product banner page
+    
+.manage-develop
+{
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 13.6rem;
+  @extend %container;
+        
+  &__container
+  {
+    margin-left:5.9rem;
+  }
+  &__title,&__subtitle
+  {
+    font-size: 4.3rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    color:$clr-lightgrey;
+    // font-family: $font-lato;
+  }
+
+  &__title
+  {
+    margin:0 0 0 11.1rem;
+  }
+
+  &__subtitle
+  {
+    margin:0 0 0 23.3rem;
+  }
+
+  &__irrigation-text
+  {
+    display: inline-block;
+    font-size:13.1rem;
+    font-weight: 900;
+    // background-image: url(../../images/farm-banner.jpg);
+    @include background-image("farm-banner",".jpg");
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-size: cover;
+    background-position: 1rem -6rem;
+    line-height: 1;
+    letter-spacing: -4px;
+    margin: 0;
+    padding: 0;
+  }
+    
+
+    
+  &__vidc-logo
+  {
+    position: absolute;
+    top: 0.2rem;
+    left:89.4rem;
+    height:16.9rem;
+    width:18.2rem;
+    margin:0;
+  }
+}
        
     
     
-        // product-category page
+// services section 
     
-    .services
-    {
+.services
+{
         
-       background: linear-gradient(#FFFFFF,#e6e6e685);
-      
-      &__list
-      {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        // padding: 11.2rem 2rem;
-        padding:11.3rem 2rem 12.2rem 2rem;
+  background: linear-gradient(#FFFFFF, rgb(230 230 230 / 60%));
+  &__list
+  {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    // padding: 11.2rem 2rem;
+    padding:11.3rem 2rem 12.2rem 2rem;
+    @extend %container;   
+    img
+    {
+      height:7.5rem;
+      width:7.5rem;
+    } 
+  }
     
-        @extend %container;   
-    
-        img
-        {
-         height:7.5rem;
-         width:7.5rem;
-        } 
-      }
-    
-      &__content
-      {
-        display: flex;
-        width: 10rem;
-        text-align: center;
-        margin: 0 4.3rem;
-        a
-        {
-          display: inline-block;
-          text-decoration: none;
-          font-weight: 600;
-          color:$clr-lightgrey;
-        }
-      }
-    
-      &__item
-      {
-        display: block;
-        font-size: 1.6rem;
-        font-weight: 900;
-        text-align: center;
-        padding-top: 1.6rem;
-      }
-    
-      &__content--devlopment
-      {
-       width:12rem;
-      }
-      
+  &__content
+  {
+    display: flex;
+    width: 10rem;
+    text-align: center;
+    margin: 0 4.3rem;
+    a
+    {
+      display: inline-block;
+      text-decoration: none;
+      font-weight: 600;
+      color:$clr-lightgrey;
     }
+  }
+    
+  &__item
+  {
+    display: block;
+    font-size: 1.6rem;
+    font-weight: 900;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 1.6rem;
+  }
+    
+  &__content--devlopment
+  {
+    width:12rem;
+  }
+      
+}
         
     
     
     
       // vidc-introduce page
     
-    .vidc
+.vidc
+{
+  position: relative;
+  height:52rem;
+  width:100%;
+  background-color:$clr-redish-brown ;
+  // background-image: url('../images/greybackground.png');
+  @include background-image("greybackground",".png");
+  background-repeat: no-repeat;
+  // margin:0;
+  margin-bottom:0 0 8.2rem 0;
+  padding:0;
+
+  &__description-container
+  {
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 7.7rem;
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 0;
+    @extend %container;
+  }
+    
+  &__video-picture
+  {
+    height: 35.2rem;
+    width:55.6rem;
+    border-radius:1.5rem;
+  }
+    
+  &__button-image
+  {
+    position:absolute;
+    top: 13.6rem;
+    left: 23rem;
+  }
+    
+  &__videobtn
+  {
+    height: 10rem;
+    width:10rem;
+    border:none;
+    border-radius: 8rem;
+    background-color: $clr-btn-green;
+    outline: 1px solid $clr-deepdeep-green ;
+  }
+    
+  &__about-information
+  {
+    display: inline-block;
+    width: 39.3rem;
+    font-size: 1.6rem;
+    line-height: 2.25rem;
+    color: white;
+    margin-left: 8.5rem;
+    padding: 0.75rem 0.1rem;
+    a
     {
-        position: relative;
-        height:52rem;
-        width:100%;
-        background-color:$clr-redish-brown ;
-        // background-image: url('../images/greybackground.png');
-        @include background-image("greybackground",".png");
-        background-repeat: no-repeat;
-        // margin:0;
-        margin-bottom:0 0 8.2rem 0;
-        padding:0;
-    
-      &__description-container
-      {
-        position: absolute;
-        right: 0;
-        left: 0;
-        bottom: 7.7rem;
-        display: flex;
-        flex-wrap: wrap;
-        padding-top: 0;
-        
-        @extend %container;
-      }
-    
-      &__video-picture
-      {
-        height: 35.2rem;
-        width:55.6rem;
-        border-radius:1.5rem;
-      }
-    
-      &__button-image
-      {
-       position:absolute;
-       top: 13.6rem;
-       left: 23rem;
-      }
-    
-      &__videobtn
-      {
-        height: 10rem;
-        width:10rem;
-        border:none;
-        border-radius: 8rem;
-        background-color: $clr-btn-green;
-        outline: 1px solid $clr-deepdeep-green ;
-      }
-    
-      &__about-information
-      {
-        display: inline-block;
-        width: 39.3rem;
-        font-size: 1.6rem;
-        line-height: 2.25rem;
-        color: white;
-        margin-left: 8.5rem;
-        padding: 0.75rem 0.1rem;
-        a
-        {
-          display: inline-block;
-          text-decoration: none;
-          font-size: 2.2rem;
-          line-height: initial;
-          color: white;
-          background-color: #44AF72;
-          padding: 1rem 2.15rem;
-        }
-      }
-    
-      &__about-description
-      {
-        display: inline-block;
-        margin: 1.4rem 0 0 0;
-        padding-bottom: 4.6rem;
-      }
-    
-      &__about-heading
-      {
-        display: inline-block;
-        font-size: 3.6rem;
-        font-weight: 800;
-        line-height: 1.2;
-        margin: 0;
-        padding: 0 0.1rem;
-      }
-    
+      display: inline-block;
+      text-decoration: none;
+      font-size: 2.2rem;
+      line-height: initial;
+      color: white;
+      background-color: #44AF72;
+      padding: 1rem 2.15rem;
     }
+  }
+    
+  &__about-description
+  {
+    display: inline-block;
+    margin: 1.4rem 0 0 0;
+    padding-bottom: 4.6rem;
+  }
+    
+  &__about-heading
+  {
+    display: inline-block;
+    font-size: 3.6rem;
+    font-weight: 800;
+    line-height: 1.2;
+    margin: 0;
+    padding: 0 0.1rem;
+  }
+    
+}
     

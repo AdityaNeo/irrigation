@@ -250,18 +250,23 @@ body {
 .manage-develop__container {
   margin-left: 5.9rem;
 }
-.manage-develop__title {
+.manage-develop__title, .manage-develop__subtitle {
   font-size: 4.3rem;
   font-weight: 900;
   text-transform: uppercase;
   color: #505050;
+}
+.manage-develop__title {
   margin: 0 0 0 11.1rem;
+}
+.manage-develop__subtitle {
+  margin: 0 0 0 23.3rem;
 }
 .manage-develop__irrigation-text {
   display: inline-block;
   font-size: 13.1rem;
   font-weight: 900;
-  background-image: url(../../images/farm-banner.jpg);
+  background-image: url(./../images/farm-banner.jpg);
   color: transparent;
   -webkit-background-clip: text;
   background-clip: text;
@@ -271,14 +276,6 @@ body {
   letter-spacing: -4px;
   margin: 0;
   padding: 0;
-}
-.manage-develop__subtitle {
-  font-size: 4.3rem;
-  font-weight: 900;
-  font-family: lato;
-  text-transform: uppercase;
-  color: #505050;
-  margin: 0 0 0 23.3rem;
 }
 .manage-develop__vidc-logo {
   position: absolute;
@@ -290,7 +287,7 @@ body {
 }
 
 .services {
-  background: linear-gradient(#FFFFFF, #e6e6e685);
+  background: linear-gradient(#FFFFFF, rgba(230, 230, 230, 0.6));
 }
 .services__list {
   display: flex;
@@ -320,6 +317,7 @@ body {
   font-size: 1.6rem;
   font-weight: 900;
   text-align: center;
+  text-transform: uppercase;
   padding-top: 1.6rem;
 }
 .services__content--devlopment {
@@ -331,7 +329,7 @@ body {
   height: 52rem;
   width: 100%;
   background-color: #3F3531;
-  background-image: url(../../images/greybackground.png);
+  background-image: url(./../images/greybackground.png);
   background-repeat: no-repeat;
   margin-bottom: 0 0 8.2rem 0;
   padding: 0;
@@ -441,7 +439,8 @@ body {
 }
 .footer__email input[type=email]::placeholder {
   color: white;
-  font-weight: 100;
+  font-weight: 400;
+  font-family: lato;
 }
 .footer__email-label {
   font-size: 2.2rem;
@@ -461,19 +460,18 @@ body {
 .footer__service-container {
   display: inline-flex;
   margin-top: 2.2rem;
-  font-family: syne;
+  font-family: sfcompact;
 }
 .footer__service-container a {
   text-decoration: none;
   color: white;
-  font-family: syne;
+  display: inline-block;
 }
 .footer__service-container ul {
   list-style-type: none;
 }
 .footer__service-container ul li {
   color: white;
-  font-size: 1.4rem;
   margin-bottom: 1.1rem;
 }
 .footer__first-list ul {
@@ -485,15 +483,13 @@ body {
   font-weight: bold;
   color: white;
   margin-bottom: 1.7rem;
+  letter-spacing: 1px;
+}
+.footer__li-off {
+  font-size: 1.4rem;
 }
 .footer__second-list ul {
   padding-right: 9.6rem;
-}
-.footer__li-on {
-  font-size: 1.8rem;
-  font-weight: bold;
-  color: white;
-  margin-bottom: 1.7rem;
 }
 .footer__third-list {
   margin-top: 3.4rem;
@@ -501,8 +497,8 @@ body {
 .footer__third-list ul {
   padding-left: 1.4rem;
 }
-.footer__li-on {
-  margin-bottom: 1.7rem;
+.footer__third-list ul li {
+  font-size: 1.4rem;
 }
 .footer__last-container {
   margin-top: 6.5rem;
@@ -592,4 +588,12 @@ body {
 @font-face {
   src: url(../../../SyneTactile-Regular.ttf);
   font-family: syne;
+}
+@font-face {
+  src: url(../../FontsFree-Net-SFCompactDisplay-Regular.ttf);
+  font-family: sfcompact;
+}
+@font-face {
+  src: url(../../SF-Compact.dmg);
+  font-family: sfdisplay;
 }
