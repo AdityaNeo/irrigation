@@ -10,26 +10,28 @@
   &__common-container {
     display: block;
     position: relative;
-    width: 100%;
+    // width: 100%;
     color: $clr-white;
     background-color: $clr-lightdeep-green;
-    margin: 0;
-    padding: 0;
+    // margin: 0;
+    // padding: 0;
   }
 
   &__main-container {
     display: flex;
     flex-wrap: wrap;
-    padding-top: 2rem;
-    padding-bottom: 4rem; 
+    // padding-top: 2rem;
+    // padding-bottom: 4rem; 
+    padding: 2rem 1.5rem 4rem 1.5rem;
     @extend %container;
   }
 
   &__right-section {
     // padding-right:2rem;
     margin-right: 1.3rem;
-    padding-right: 0px;
-    padding-top:4rem;
+    // padding-right: 0px;
+    // padding-top:4rem;
+    padding:4rem 0 0 0;
   }
 
   &__email {
@@ -39,7 +41,7 @@
       display: block;
       width: 447px;
       font-size: 1.4rem;
-      font-weight: bold;
+      font-weight: 900;
       background-color:$clr-shadow-black;
       border: none;
       border-radius: 3.5rem;
@@ -63,7 +65,7 @@
 
   &__submit {
       position: absolute;
-      top: 4.2rem;
+      top: 4.4rem;
       left: 47.7rem;
       font-family:$font-sf-compact;
       font-size: 1.6rem;
@@ -157,9 +159,7 @@
   &__dwn-up {
     text-align: right;
   }
-
-// ......................................
-
+// ......contact card.........
   &__contact-container {
     background-color:$clr-shadow-green;
     padding:2rem 3.4rem 0 4rem;

@@ -56,8 +56,8 @@
       top: 47.8rem;
       left: 50%;
       right: 50%;
-      background-color:  $clr-lightdeep-green;
       display: flex;
+      background-color:  $clr-lightdeep-green;
       justify-content: center;
       padding: 2.5rem 4rem;
     }
@@ -129,9 +129,13 @@
          
 // services section  
 .services {     
-  background: linear-gradient(#FFFFFF, rgb(230 230 230 / 60%));
+  background: linear-gradient($clr-white,$clr-deep-shadow-black-white);
+
+  &__list,&__content {
+     display: flex;
+  }
+
   &__list {
-    display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
@@ -144,7 +148,6 @@
   }
     
   &__content {
-    display: flex;
     width: 10rem;
     text-align: center;
     margin: 0 4.3rem;
@@ -172,7 +175,7 @@
 }
     
 // vidc-introduce page
-.aboutus{
+.aboutus {
   position: relative;
   height:52rem;
   width:100%;
