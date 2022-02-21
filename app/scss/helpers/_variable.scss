@@ -1,7 +1,6 @@
 $clr-black:black;
 $clr-dargkgery:#4E3939;
 $clr-lightgrey:#505050;
-
 $clr-blue:#265781;
 $clr-green:#52B27B;
 $clr-yellow:#F2E162;
@@ -12,11 +11,17 @@ $clr-deepfoot-green:#186A3B;
 $clr-white:rgb(255, 255, 255);
 $clr-redish-brown:#3F3531;
 $clr-btn-green:#44AF72;
+$clr-btn-light-green:#4FC172;
 $clr-foot-light-green:#1B6D3E;
 $clr-foot-hr-green:#3eff9159;
+$clr-grey-black:#393939;
+$clr-shadow-black: rgb(0 0 0 / 10%);
+$clr-shadow-white:rgb(255 255 255 / 80%);
+$clr-deep-shadow-white:rgb(255 255 255 / 90%);
+$clr-shadow-black-white: rgb(255 255 255 / 30%);
+$clr-shadow-green:rgb(29 29 29 / 10%);
 
 $img-path:"./../images/";
-
-$font-lato:"Lato";
-
+$font-sfcompact-path:"./../";
 $font-sf-compact:sfcompact;
+$font-lato:"Lato";

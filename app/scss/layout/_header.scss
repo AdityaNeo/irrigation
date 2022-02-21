@@ -1,183 +1,160 @@
 
     // header-logo and navbar section
 
-    .header
-    {
-      position: relative;
-      z-index: 1;
-      box-shadow: 0px 3px 6px 0 #00000038;
-    
-      @at-root 
-      {
-        &__common-container
-        {
-         display: flex;
-         flex-wrap: wrap;
-         padding: 1.6rem 0 1.9rem 0;
-    
-         @extend %container;
+.header{
+  position: relative;
+  z-index: 1;
+  box-shadow: 0px 3px 6px 0 #00000038;
+  @at-root {
+
+    &__common-container {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 1.6rem 0 1.9rem 0;
+      @extend %container;
+    }
+
+    &__logo {   
+      a {
+        display: inline-block;
+      }
+    }
+
+    &__container {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      margin: 0 0 0 auto;
+      padding:0;
+    }
+
+    &__top-links {
+      display: flex;
+      justify-content: flex-end;
+      flex-wrap: wrap;
+      margin: 0 0 1.3rem 0;
+      padding: 0;
+      ul {
+        list-style-type:none;
+        margin:0;
+        padding:0;
+        li:nth-child(6) {
+          margin-left: 1.15rem;
         }
-        &__logo
-        {   
-          a
-          {
-              display: inline-block;
+        li {
+          display: inline-block;  
+          a {  
+            display: inline-block;
+            text-decoration: none;        
+            color:$clr-lightgrey;                              
+            font-weight: 500;
+            font-size: 1.4rem;
           }
-        }
-        &__container
-        {
-          display: flex;
-          flex-direction: column;
-          justify-content: flex-end;
-          margin: 0 0 0 auto;
-          padding:0;
-        }
-        &__top-links
-        {
-          display: flex;
-          justify-content: flex-end;
-          flex-wrap: wrap;
-          margin: 0 0 1.3rem 0;
-          padding: 0;
-          ul
-          {
-            list-style-type:none;
-            margin:0;
-            padding:0;
-            li:nth-child(6)
-            {
-              margin-left: 1.15rem;
-            }
-            li
-            {
-              display: inline-block;  
-              a
-              {  
-                display: inline-block;
-                text-decoration: none;        
-                color:$clr-lightgrey;                              
-                font-weight: 500;
-                font-size: 1.4rem;
-              }
-              .header__small-letter
-              {
-              font-size: 12px;
-              font-weight: bold;
-              font-family: 'Fira Sans', sans-serif;
-              padding: 0 0 0 2.4rem;
-              }
-              .header__normal-letter
-              {
-              font-size: 14px;
-              font-weight: bold;
-              font-family: 'Fira Sans', sans-serif;
-              padding:0 0 0 1rem;
-              }
-              .header__large-letter
-              {
-              font-size: 16px;
-              font-weight: bold;
-              font-family: 'Fira Sans', sans-serif;                     
-              border-right: 0.1rem solid $clr-blue;
-              padding: 0 1.8rem 0 1.6rem;
-              }
-            } 
-            select
-            {
-              font-size: 14px;
-              font-weight: 400;
-              font-family: 'Fira Sans', sans-serif;  
-              border: none;
-              padding: 0 0 0 1.15rem;
-              &:focus
-              {
-               outline-style: none;
-              }
-            }
+          .header__small-letter {
+            font-size: 12px;
+            font-weight: bold;
+            font-family: 'Fira Sans', sans-serif;
+            padding: 0 0 0 2.4rem;
           }
-        }
-    
-        &__search-icon
-        {
-         height: 1.43rem;
-         width:1.35rem;
-        }
-        &__link-aboutus
-        {
-         padding-right:2.1rem;
-        }
-        &__link-tenders
-        {
-         padding-right:2.2rem;
-        }
-        &__link-separator
-        {
-          border-left:0.1rem solid $clr-blue;
-          border-right: 0.1rem solid $clr-blue;
-          padding:0 1.2rem 0 1.2rem;
-          a:nth-child(2)
-          {
-           padding:0 1rem;
+          .header__normal-letter {
+            font-size: 14px;
+            font-weight: bold;
+            font-family: 'Fira Sans', sans-serif;
+            padding:0 0 0 1rem;
           }
-        }
-    
-        &__dot
-        {
-          display: inline-block;
-          height:1.5rem;
-          width:1.5rem;
-          border-radius: 50%;
-        }
-        &__dot-link
-        {
-          font-size: 0;
-        }
-        &__dot--blue-dot{background-color:$clr-blue;}
-        &__dot--green-dot{background-color: $clr-green;}
-        &__dot--yellow-dot{background-color: $clr-yellow;}
-        &__search-logo
-        {
-          padding-left: 0.5rem;
-        }
-    
-       //............. bottom links................
-        &__bottom-links
-        {
-         font-size: 1.4rem;
-         font-weight: 500;
-         padding:0;
-         ul
-         {
-           list-style-type: none;
-           padding: 0;
-           margin-top:0;
-           margin-bottom: 0;
-           li
-           { 
-             display: inline-block;
-              a
-              {
-               text-decoration: none;
-               padding: 0 0.8rem 0 0.8rem;
-               color:$clr-lightgrey;                              
-              }
-             .header__btmlink-separator--lremove
-              {
-               padding-left:0;
-              }
-             .header__btmlink-separator--rremove
-              {
-               padding-right:0;
-              }
-                  
-            }
+          .header__large-letter {
+            font-size: 16px;
+            font-weight: bold;
+            font-family: 'Fira Sans', sans-serif;                     
+            border-right: 0.1rem solid $clr-blue;
+            padding: 0 1.8rem 0 1.6rem;
           }
-        }
-        &__btmlink-separator
-        {
-          border-right: 1px solid; 
+        } 
+        select {
+          font-size: 14px;
+          font-weight: 400;
+          font-family: 'Fira Sans', sans-serif;  
+          border: none;
+          padding: 0 0 0 1.15rem;
+          &:focus {
+            outline-style: none;
+          }
         }
       }
     }
+    
+    &__search-icon {
+      height: 1.43rem;
+      width:1.35rem;
+    }
+
+    &__link-aboutus{
+      padding-right:2.1rem;
+    }
+
+    &__link-tenders {
+      padding-right:2.2rem;
+    }
+
+    &__link-separator {
+      border-left:0.1rem solid $clr-blue;
+      border-right: 0.1rem solid $clr-blue;
+      padding:0 1.2rem 0 1.2rem;
+      a:nth-child(2) {
+        padding:0 1rem;
+      }
+    }
+    
+    &__dot {
+      display: inline-block;
+      height:1.5rem;
+      width:1.5rem;
+      border-radius: 50%;
+    }
+    &__dot-link {
+      font-size: 0;
+    }
+    &__dot--blue-dot{background-color:$clr-blue;}
+
+    &__dot--green-dot{background-color: $clr-green;}
+    
+    &__dot--yellow-dot{background-color: $clr-yellow;}
+    
+    &__search-logo {
+      padding-left: 0.5rem;
+    }
+    
+//   bottom links
+    &__bottom-links {
+      font-size: 1.4rem;
+      font-weight: 500;
+      padding:0;
+      ul {
+        list-style-type: none;
+        padding: 0;
+        margin-top:0;
+        margin-bottom: 0;
+        li { 
+          display: inline-block;
+          a {
+            text-decoration: none;
+            padding: 0 0.8rem 0 0.8rem;
+            color:$clr-lightgrey;                              
+          }
+          .header__btmlink-separator--lremove {
+            padding-left:0;
+          }
+          .header__btmlink-separator--rremove {
+            padding-right:0;
+          }
+                  
+        }
+      }
+    }
+    &__btmlink-separator {
+      border-right: 1px solid; 
+    }
+  }
+}
     
     

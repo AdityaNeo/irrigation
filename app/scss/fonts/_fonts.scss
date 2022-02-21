@@ -1,34 +1,9 @@
-// @font-face {
-//     font-family: 'Roboto';
-//     src:    url('../fonts/Roboto-Regular/Roboto-Regular.eot');
-//     src:    url('../fonts/Roboto-Regular/Roboto-Regular.eot?#iefix') format('embedded-opentype'),
-//             url('../fonts/Roboto-Regular/Roboto-Regular.woff2') format('woff2'),
-//             url('../fonts/Roboto-Regular/Roboto-Regular.woff') format('woff'),
-//             url('../fonts/Roboto-Regular/Roboto-Regular.ttf') format('truetype'),
-//             url('../fonts/Roboto-Regular/Roboto-Regular.svg#Roboto-Regular') format('svg');
-//     font-weight: 400;
-//     font-style: normal;
-// }
-
-// @font-face {
-//     font-family: 'SF Compact Display Thin';
-//     font-style: normal;
-//     font-weight: normal;
-//     src: local('SF Compact Display Thin'), url(../../../sf-compact-display-thin-58646eb43a785.woff) format('woff');
-//     }
-    
-
 @font-face {
-    src: url(../../../SyneTactile-Regular.ttf);
-    font-family: syne;
-    }
-
-@font-face {
-    src: url(../../FontsFree-Net-SFCompactDisplay-Regular.ttf);
+    src: url(#{$font-sfcompact-path}FontsFree-Net-SFCompactDisplay-Regular.ttf);
     font-family: sfcompact;
         }
 
 @font-face {
-        src: url(../../SF-Compact.dmg);
+        src: url(./../SF-Compact.dmg);
         font-family: sfdisplay;
         }

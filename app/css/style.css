@@ -11,7 +11,7 @@ body {
   margin: 0;
 }
 
-.footer__main-container, .vidc__description-container, .services__list, .manage-develop, .banner__container, .header__common-container {
+.footer__main-container, .aboutus__container, .services__list, .manage-develop, .banner__container, .header__common-container {
   max-width: 1125px;
   width: 100%;
   margin: 0 auto;
@@ -324,7 +324,7 @@ body {
   width: 12rem;
 }
 
-.vidc {
+.aboutus {
   position: relative;
   height: 52rem;
   width: 100%;
@@ -334,7 +334,7 @@ body {
   margin-bottom: 0 0 8.2rem 0;
   padding: 0;
 }
-.vidc__description-container {
+.aboutus__container {
   position: absolute;
   right: 0;
   left: 0;
@@ -343,34 +343,36 @@ body {
   flex-wrap: wrap;
   padding-top: 0;
 }
-.vidc__video-picture {
-  height: 35.2rem;
-  width: 55.6rem;
-  border-radius: 1.5rem;
+.aboutus__video-picture {
+  position: relative;
+  border-radius: 1.3rem;
 }
-.vidc__button-image {
+.aboutus__button-image {
   position: absolute;
-  top: 13.6rem;
+  top: 15rem;
   left: 23rem;
+  border-radius: 50%;
+  border: 2px solid #4FC172;
 }
-.vidc__videobtn {
-  height: 10rem;
-  width: 10rem;
+.aboutus__videobtn {
+  height: 7rem;
+  width: 7rem;
   border: none;
   border-radius: 8rem;
+  margin: 3px;
   background-color: #44AF72;
-  outline: 1px solid #0F5C30;
+  color: white;
 }
-.vidc__about-information {
+.aboutus__about-information {
   display: inline-block;
   width: 39.3rem;
   font-size: 1.6rem;
   line-height: 2.25rem;
   color: white;
   margin-left: 8.5rem;
-  padding: 0.75rem 0.1rem;
+  padding: 0 0.1rem 0.75rem 0.1rem;
 }
-.vidc__about-information a {
+.aboutus__about-information a {
   display: inline-block;
   text-decoration: none;
   font-size: 2.2rem;
@@ -379,17 +381,17 @@ body {
   background-color: #44AF72;
   padding: 1rem 2.15rem;
 }
-.vidc__about-description {
+.aboutus__about-description {
   display: inline-block;
-  margin: 1.4rem 0 0 0;
+  margin: 0;
   padding-bottom: 4.6rem;
 }
-.vidc__about-heading {
+.aboutus__about-heading {
   display: inline-block;
   font-size: 3.6rem;
   font-weight: 800;
   line-height: 1.2;
-  margin: 0;
+  margin: 0 0 1.4rem 0;
   padding: 0 0.1rem;
 }
 
@@ -397,50 +399,49 @@ body {
   margin-top: 8.4rem;
 }
 .footer__grass-picture {
-  width: 100%;
   display: inherit;
+  width: 100%;
 }
 .footer__common-container {
+  display: block;
   position: relative;
   width: 100%;
-  padding: 0;
-  margin-left: 0;
-  margin-right: 0;
-  width: 100%;
-  display: block;
   color: white;
+  background-color: #1B7642;
   margin: 0;
-  background-color: #1b7642;
+  padding: 0;
 }
 .footer__main-container {
   display: flex;
   flex-wrap: wrap;
-  padding: 2rem 0 4rem 0;
+  padding-top: 2rem;
+  padding-bottom: 4rem;
 }
 .footer__right-section {
-  padding-right: 2rem;
+  margin-right: 1.3rem;
+  padding-right: 0px;
   padding-top: 4rem;
 }
 .footer__email {
   position: relative;
 }
 .footer__email input[type=email] {
-  border-radius: 3.5rem;
-  padding: 1.5rem 20.7rem 1.5rem 1.8rem;
-  background-color: #186A3B;
+  display: block;
+  width: 447px;
   font-size: 1.4rem;
   font-weight: bold;
+  background-color: rgba(0, 0, 0, 0.1);
   border: none;
-  margin-top: 1rem;
-  outline-style: none;
-  display: block;
+  border-radius: 3.5rem;
   color: white;
-  width: 447px;
+  outline-style: none;
+  padding: 1.5rem 20.7rem 1.5rem 1.8rem;
+  margin-top: 1rem;
 }
 .footer__email input[type=email]::placeholder {
-  color: white;
   font-weight: 400;
   font-family: lato;
+  color: white;
 }
 .footer__email-label {
   font-size: 2.2rem;
@@ -448,14 +449,15 @@ body {
 }
 .footer__submit {
   position: absolute;
-  border-radius: 2rem;
-  border: none;
+  top: 4.2rem;
+  left: 47.7rem;
+  font-family: sfcompact;
   font-size: 1.6rem;
-  font-weight: 800;
-  font-family: lato;
-  padding: 0.85rem 3.05rem;
-  top: 4.3rem;
-  left: 47.2rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 2rem;
+  color: #393939;
+  padding: 0.85rem 3.7rem;
 }
 .footer__service-container {
   display: inline-flex;
@@ -463,9 +465,9 @@ body {
   font-family: sfcompact;
 }
 .footer__service-container a {
+  display: inline-block;
   text-decoration: none;
   color: white;
-  display: inline-block;
 }
 .footer__service-container ul {
   list-style-type: none;
@@ -476,33 +478,35 @@ body {
 }
 .footer__first-list ul {
   padding: 0;
-  padding-right: 9.8rem;
+  margin-right: 10.1rem;
 }
-.footer__li-on {
+.footer__li-head {
   font-size: 1.8rem;
   font-weight: bold;
   color: white;
-  margin-bottom: 1.7rem;
   letter-spacing: 1px;
+  margin-bottom: 1.7rem;
 }
-.footer__li-off {
+.footer__li-sub {
   font-size: 1.4rem;
 }
 .footer__second-list ul {
-  padding-right: 9.6rem;
+  padding: 0;
+  margin-right: 10.5rem;
 }
 .footer__third-list {
   margin-top: 3.4rem;
 }
 .footer__third-list ul {
-  padding-left: 1.4rem;
+  padding: 0;
 }
 .footer__third-list ul li {
   font-size: 1.4rem;
 }
 .footer__last-container {
-  margin-top: 6.5rem;
   font-size: 1.3rem;
+  margin-top: 6.5rem;
+  color: rgba(255, 255, 255, 0.9);
 }
 .footer__copyright-part {
   display: inline-block;
@@ -510,28 +514,45 @@ body {
 .footer__poweredby-part {
   display: inline-block;
   position: relative;
-  left: 13.5rem;
+  margin-left: 19rem;
+}
+.footer__powered {
+  display: flex;
+  justify-content: end;
 }
 .footer__dwn-up {
   text-align: right;
 }
 .footer__contact-container {
-  background-color: #1B6D3E;
-  padding: 2rem 4rem 0 4rem;
+  background-color: rgba(29, 29, 29, 0.1);
+  padding: 2rem 3.4rem 0 4rem;
   margin: 0;
 }
 .footer__contact-container a {
   text-decoration: none;
-  color: white;
+  color: rgba(255, 255, 255, 0.8);
 }
 .footer__contact-container ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
 }
+.footer__map-location {
+  margin-right: 17px;
+  padding-bottom: 20px;
+}
+.footer__mobile {
+  padding-bottom: 9px;
+  margin-right: 17px;
+}
+.footer__envelope {
+  padding-bottom: 7px;
+  margin-right: 8px;
+}
 .footer__contact-detail {
-  width: 27rem;
   display: inline-block;
+  width: 27rem;
+  margin-left: 6px;
 }
 .footer__contact-detail h3 {
   display: inline-block;
@@ -541,30 +562,22 @@ body {
   margin-bottom: 3px;
 }
 .footer__contact-detail a {
-  font-size: 14px;
-  font-weight: bold;
-  margin-top: 3px;
   display: block;
+  font-size: 14px;
+  font-weight: 500;
+  margin-top: 3px;
 }
 .footer__contact-detail hr {
   border-color: #3eff9159;
   outline: none;
 }
-.footer__logo {
-  display: inline-block;
-  position: relative;
-  right: 1.6rem;
-  margin: 0;
-  padding: 0;
+.footer__contact-detail--top {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  padding-bottom: 13px;
 }
 .footer__contact-detail--mid {
-  position: relative;
-  right: 0;
-  left: 1.8rem;
-}
-.footer__contact-detail--last {
-  position: relative;
-  right: 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  padding-bottom: 13px;
 }
 .footer__social-handle {
   margin: 4rem 0 0 0;
@@ -574,26 +587,21 @@ body {
 }
 .footer__social-handle ul li {
   display: inline-block;
-  font-size: 1.5rem;
   margin-left: 1rem;
 }
 .footer__followus {
   font-size: 2rem;
   font-weight: 700;
-  margin-left: 0;
+  margin-left: 0 !important;
   padding: 0 1rem 0 0;
-  border-right: 1px solid #488964;
+  border-right: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 @font-face {
-  src: url(../../../SyneTactile-Regular.ttf);
-  font-family: syne;
-}
-@font-face {
-  src: url(../../FontsFree-Net-SFCompactDisplay-Regular.ttf);
+  src: url(./../FontsFree-Net-SFCompactDisplay-Regular.ttf);
   font-family: sfcompact;
 }
 @font-face {
-  src: url(../../SF-Compact.dmg);
+  src: url(./../SF-Compact.dmg);
   font-family: sfdisplay;
 }

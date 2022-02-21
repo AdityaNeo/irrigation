@@ -1,13 +1,12 @@
   //root-container 
   %container 
   {
-  
   max-width:1125px;
   width:100%;
   margin:0 auto;
   padding:0 15px;
-  
   }
+
   @mixin background-image($imgName,$extension)
   {
     background-image: url(#{$img-path}#{$imgName}#{$extension});
