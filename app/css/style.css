@@ -11,7 +11,7 @@ body {
   margin: 0;
 }
 
-.footer__main-container, .aboutus__container, .services__list, .manage-develop, .banner__container, .header__common-container {
+.footer__main-container, .about-us__container, .services__list, .manage-develop, .banner__container, .header__common-container {
   max-width: 1125px;
   width: 100%;
   margin: 0 auto;
@@ -325,7 +325,7 @@ body {
   width: 12rem;
 }
 
-.aboutus {
+.about-us {
   position: relative;
   height: 52rem;
   width: 100%;
@@ -335,7 +335,7 @@ body {
   margin-bottom: 0 0 8.2rem 0;
   padding: 0;
 }
-.aboutus__container {
+.about-us__container {
   position: absolute;
   right: 0;
   left: 0;
@@ -344,18 +344,18 @@ body {
   flex-wrap: wrap;
   padding-top: 0;
 }
-.aboutus__video-picture {
+.about-us__video-picture {
   position: relative;
   border-radius: 1.3rem;
 }
-.aboutus__button-image {
+.about-us__button-image {
   position: absolute;
   top: 15rem;
   left: 23rem;
   border-radius: 50%;
   border: 2px solid #4FC172;
 }
-.aboutus__videobtn {
+.about-us__videobtn {
   height: 7rem;
   width: 7rem;
   border: none;
@@ -364,7 +364,7 @@ body {
   background-color: #44AF72;
   color: white;
 }
-.aboutus__about-information {
+.about-us__about-information {
   display: inline-block;
   width: 39.3rem;
   font-size: 1.6rem;
@@ -373,7 +373,7 @@ body {
   margin-left: 8.5rem;
   padding: 0 0.1rem 0.75rem 0.1rem;
 }
-.aboutus__about-information a {
+.about-us__about-information a {
   display: inline-block;
   text-decoration: none;
   font-size: 2.2rem;
@@ -382,12 +382,12 @@ body {
   background-color: #44AF72;
   padding: 1rem 2.15rem;
 }
-.aboutus__about-description {
+.about-us__about-description {
   display: inline-block;
   margin: 0;
   padding-bottom: 4.6rem;
 }
-.aboutus__about-heading {
+.about-us__about-heading {
   display: inline-block;
   font-size: 3.6rem;
   font-weight: 800;
@@ -521,7 +521,7 @@ body {
 }
 .footer__contact-container {
   background-color: rgba(29, 29, 29, 0.1);
-  padding: 2rem 3.4rem 0 4rem;
+  padding: 3.6rem 2.7rem 0 2.7rem;
   margin: 0;
 }
 .footer__contact-container a {
@@ -555,28 +555,33 @@ body {
   font-size: 18px;
   font-weight: bold;
   padding-bottom: 0;
-  margin-bottom: 3px;
+  margin-bottom: 0.1rem;
+  margin-top: 0;
 }
 .footer__contact-detail a {
   display: block;
   font-size: 14px;
   font-weight: 500;
-  margin-top: 3px;
+  margin-top: 0;
 }
 .footer__contact-detail hr {
   border-color: #3eff9159;
   outline: none;
 }
 .footer__contact-detail--top {
-  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-  padding-bottom: 13px;
+  border-bottom: 0.1rem solid rgba(255, 255, 255, 0.3);
+  padding-bottom: 1.3rem;
 }
 .footer__contact-detail--mid {
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-  padding-bottom: 13px;
+  padding-bottom: 1.8rem;
+  padding-top: 1.7rem;
+}
+.footer__contact-detail--last {
+  padding-top: 1.9rem;
 }
 .footer__social-handle {
-  margin: 4rem 0 0 0;
+  margin: 3.6rem 0 0 0;
 }
 .footer__social-handle ul {
   list-style-type: none;

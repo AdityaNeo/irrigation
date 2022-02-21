@@ -2,6 +2,7 @@
   // footer-section
 .footer
 {
+
   margin-top:8.4rem;
   &__grass-picture {
   display: inherit;
@@ -162,8 +163,8 @@
 // ......contact card.........
   &__contact-container {
     background-color:$clr-shadow-green;
-    padding:2rem 3.4rem 0 4rem;
-    // padding:2rem 2.7rem 0 2.7rem;
+    // padding:2rem 3.4rem 0 4rem;
+    padding:3.6rem 2.7rem 0 2.7rem;
 
     margin:0;
     a {
@@ -204,13 +205,14 @@
       font-size:18px; 
       font-weight: bold; 
       padding-bottom:0; 
-      margin-bottom: 3px;
+      margin-bottom: 0.1rem;
+      margin-top:0;
     }
     a {
       display: block;
       font-size:14px;
       font-weight: 500;
-      margin-top:3px;
+      margin-top:0;
     }
     hr {
       border-color: $clr-foot-hr-green;
@@ -220,13 +222,14 @@
   }
   &__contact-detail--top
   {
-   border-bottom: 1px solid $clr-shadow-black-white;
-   padding-bottom: 13px;
+   border-bottom: 0.1rem solid $clr-shadow-black-white;
+   padding-bottom: 1.3rem;
   }
   &__contact-detail--mid
   {
     border-bottom: 1px solid $clr-shadow-black-white;
-    padding-bottom: 13px;
+    padding-bottom: 1.8rem;
+    padding-top:1.7rem;
   }
   // &__contact-detail--mid {
   //   position: relative;
@@ -234,13 +237,14 @@
   //   left:1.8rem;
   // }
 
-  // &__contact-detail--last {
-  //   position: relative;
-  //   right:0;
-  // }
+  &__contact-detail--last {
+    // position: relative;
+    // right:0;
+    padding-top:1.9rem;
+  }
 
   &__social-handle {
-    margin:4rem 0 0 0;
+    margin:3.6rem 0 0 0;
     ul {
       list-style-type: none;
       li {
