@@ -11,7 +11,7 @@ body {
   margin: 0;
 }
 
-.footer__main-container, .about-us__container, .services__list, .manage-develop, .banner__container, .header__common-container {
+.footer__main, .about-us__container, .services__list, .manage-develop, .banner__container, .header__common-container {
   max-width: 1125px;
   width: 100%;
   margin: 0 auto;
@@ -327,13 +327,14 @@ body {
 
 .about-us {
   position: relative;
-  height: 52rem;
   width: 100%;
   background-color: #3F3531;
-  background-image: url(./../images/greybackground.png);
   background-repeat: no-repeat;
   margin-bottom: 0 0 8.2rem 0;
   padding: 0;
+}
+.about-us__greyimage {
+  display: block;
 }
 .about-us__container {
   position: absolute;
@@ -364,8 +365,7 @@ body {
   background-color: #44AF72;
   color: white;
 }
-.about-us__about-information {
-  display: inline-block;
+.about-us__about-us-information {
   width: 39.3rem;
   font-size: 1.6rem;
   line-height: 2.25rem;
@@ -373,7 +373,7 @@ body {
   margin-left: 8.5rem;
   padding: 0 0.1rem 0.75rem 0.1rem;
 }
-.about-us__about-information a {
+.about-us__about-us-information a {
   display: inline-block;
   text-decoration: none;
   font-size: 2.2rem;
@@ -382,12 +382,12 @@ body {
   background-color: #44AF72;
   padding: 1rem 2.15rem;
 }
-.about-us__about-description {
+.about-us__about-us-description {
   display: inline-block;
   margin: 0;
-  padding-bottom: 4.6rem;
+  margin-bottom: 4.6rem;
 }
-.about-us__about-heading {
+.about-us__about-us-heading {
   display: inline-block;
   font-size: 3.6rem;
   font-weight: 800;
@@ -404,28 +404,28 @@ body {
   width: 100%;
 }
 .footer__common-container {
-  display: block;
-  position: relative;
   color: white;
   background-color: #1B7642;
 }
-.footer__main-container {
+.footer__main {
   display: flex;
   flex-wrap: wrap;
-  padding: 2rem 1.5rem 4rem 1.5rem;
+  padding: 0 1.5rem 4rem 1.5rem;
 }
 .footer__right-section {
   margin-right: 2.6rem;
-  padding: 4rem 0 0 0;
+  margin-top: 3rem;
 }
-.footer__email {
+.footer__news-letter {
   position: relative;
+  margin-bottom: 2.4rem;
 }
-.footer__email input[type=email] {
+.footer__news-letter input[type=email] {
   display: block;
   width: 447px;
+  font-family: lato;
   font-size: 1.4rem;
-  font-weight: 900;
+  font-weight: 400;
   background-color: rgba(0, 0, 0, 0.1);
   border: none;
   border-radius: 3.5rem;
@@ -434,12 +434,13 @@ body {
   padding: 1.5rem 20.7rem 1.5rem 1.8rem;
   margin-top: 1rem;
 }
-.footer__email input[type=email]::placeholder {
+.footer__news-letter input[type=email]::placeholder {
+  font-size: 1.4rem;
   font-weight: 400;
   font-family: lato;
   color: white;
 }
-.footer__email-label {
+.footer__news-letter-label {
   font-size: 2.2rem;
   font-weight: bold;
 }
@@ -457,7 +458,7 @@ body {
 }
 .footer__service-container {
   display: inline-flex;
-  margin-top: 2.2rem;
+  margin-bottom: 7.4rem;
   font-family: sfcompact;
 }
 .footer__service-container a {
@@ -467,88 +468,115 @@ body {
 }
 .footer__service-container ul {
   list-style-type: none;
+  padding: 0;
 }
 .footer__service-container ul li {
   color: white;
   margin-bottom: 1.1rem;
 }
-.footer__first-list ul {
-  padding: 0;
-  margin-right: 10.1rem;
+.footer__first-list {
+  display: inline-block;
+  margin-right: 10.5rem;
 }
-.footer__li-head {
+.footer__first-list ul {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+.footer__first-list ul li:last-child {
+  margin-bottom: 0;
+}
+.footer__service-head {
   font-size: 1.8rem;
   font-weight: bold;
   color: white;
   letter-spacing: 1px;
   margin-bottom: 1.7rem;
 }
-.footer__li-sub {
+.footer__service-title {
   font-size: 1.4rem;
 }
-.footer__second-list ul {
-  padding: 0;
+.footer__second-list {
   margin-right: 10.5rem;
+}
+.footer__second-list ul {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+.footer__second-list ul li:last-child {
+  margin-bottom: 0;
 }
 .footer__third-list {
   margin-top: 3.4rem;
 }
 .footer__third-list ul {
-  padding: 0;
+  margin-bottom: 0;
+  margin-top: 0;
 }
 .footer__third-list ul li {
   font-size: 1.4rem;
 }
+.footer__third-list ul li:last-child {
+  margin-bottom: 0;
+}
 .footer__last-container {
   font-size: 1.3rem;
-  margin-top: 6.5rem;
   color: rgba(255, 255, 255, 0.9);
 }
 .footer__copyright-part {
   display: inline-block;
+  width: 43rem;
 }
 .footer__poweredby-part {
   display: inline-block;
-  position: relative;
-  margin-left: 19rem;
+  margin-left: 18rem;
 }
 .footer__powered {
   display: flex;
   justify-content: end;
 }
-.footer__dwn-up {
-  text-align: right;
-}
-.footer__contact-container {
+.footer__contact {
   background-color: rgba(29, 29, 29, 0.1);
-  padding: 3.6rem 2.7rem 0 2.7rem;
-  margin: 0;
+  margin: 0 0 0 0;
 }
-.footer__contact-container a {
+.footer__contact a {
   text-decoration: none;
   color: rgba(255, 255, 255, 0.8);
+  display: block;
 }
-.footer__contact-container ul {
+.footer__contact ul {
   list-style-type: none;
   padding: 0;
-  margin: 0;
+  margin: 4.1rem 0 4.6rem 3rem;
+}
+.footer__contact ul li:nth-child(1) {
+  margin-bottom: 1.7rem;
+}
+.footer__contact ul li:nth-child(1) div {
+  border-bottom: 0.1rem solid rgba(255, 255, 255, 0.3);
+  padding-bottom: 1.3rem;
+}
+.footer__contact ul li:nth-child(2) {
+  margin-bottom: 1.9rem;
+}
+.footer__contact ul li:nth-child(2) div {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  padding-bottom: 1.8rem;
+  padding-right: 0.3rem;
 }
 .footer__map-location {
-  margin-right: 17px;
-  padding-bottom: 20px;
+  margin-bottom: 20px;
+  margin-right: 2.7rem;
 }
 .footer__mobile {
-  padding-bottom: 9px;
-  margin-right: 17px;
+  margin-right: 2.7rem;
 }
 .footer__envelope {
-  padding-bottom: 7px;
-  margin-right: 8px;
+  margin-right: 2.2rem;
 }
 .footer__contact-detail {
   display: inline-block;
-  width: 27rem;
-  margin-left: 6px;
+  width: 26rem;
+  margin-right: 2.6rem;
 }
 .footer__contact-detail h3 {
   display: inline-block;
@@ -568,34 +596,30 @@ body {
   border-color: #3eff9159;
   outline: none;
 }
-.footer__contact-detail--top {
-  border-bottom: 0.1rem solid rgba(255, 255, 255, 0.3);
-  padding-bottom: 1.3rem;
-}
-.footer__contact-detail--mid {
-  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-  padding-bottom: 1.8rem;
-  padding-top: 1.7rem;
-}
-.footer__contact-detail--last {
-  padding-top: 1.9rem;
-}
 .footer__social-handle {
-  margin: 3.6rem 0 0 0;
+  display: inline-block;
+  margin-left: 2.7rem;
 }
 .footer__social-handle ul {
-  list-style-type: none;
+  display: inline-block;
+  margin: 0;
 }
 .footer__social-handle ul li {
   display: inline-block;
-  margin-left: 1rem;
+  margin-left: 0 0 0 2.2rem;
 }
-.footer__followus {
+.footer__social-platform li {
+  margin: 0 0 0 2.2rem;
+  margin-bottom: 0 !important;
+}
+.footer__title {
+  display: inline-block;
   font-size: 2rem;
   font-weight: 700;
   margin-left: 0 !important;
   padding: 0 1rem 0 0;
   border-right: 1px solid rgba(255, 255, 255, 0.3);
+  margin: 0;
 }
 
 @font-face {
