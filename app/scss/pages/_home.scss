@@ -177,10 +177,9 @@
 // vidc-introduce page
 .about-us {
   position: relative;
-  width:100%;
   background-color:$clr-redish-brown ;
   background-repeat: no-repeat;
-  margin-bottom:0 0 8.2rem 0;
+  margin:0 0 8.4rem 0;
   padding:0;
 
   &__greyimage {
@@ -204,7 +203,7 @@
 
   }
     
-  &__button-image {
+  &__play-button {
     position: absolute;
     top: 15rem;
     left: 23rem;
@@ -222,7 +221,7 @@
     color:$clr-white;
   }
     
-  &__about-us-information {
+  &__information {
     width: 39.3rem;
     font-size: 1.6rem;
     line-height: 2.25rem;
@@ -239,14 +238,24 @@
       padding: 1rem 2.15rem;
     }
   }
-    
-  &__about-us-description {
+
+  // .btn--knowmore {
+  //   display: inline-block;
+  //   text-decoration: none;
+  //   font-size: 2.2rem;
+  //   line-height: initial;
+  //   color:$clr-white;
+  //   background-color: $clr-btn-green;
+  //   padding: 1rem 2.15rem;
+  // } 
+
+  &__description {
     display: inline-block;
     margin:0;
     margin-bottom: 4.6rem;
   }
     
-  &__about-us-heading {
+  &__heading {
     display: inline-block;
     font-size: 3.6rem;
     font-weight: 800;

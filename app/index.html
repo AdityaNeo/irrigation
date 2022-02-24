@@ -175,14 +175,14 @@
   <div class="about-us__container">
     <div class="about-us__video-picture"> 
       <img src="./images/video-picture.jpg" class="about-us__video-picture" alt="videopic">
-      <div class="about-us__button-image">
+      <div class="about-us__play-button">
       <button class="about-us__videobtn"><i class="fa fa-play fa-2x white"></i></button>
       </div>
     </div>
 
-    <div class="about-us__about-us-information">
-      <h3 class="about-us__about-us-heading">About VIDC</h1>
-      <p class="about-us__about-us-description">
+    <div class="about-us__information">
+      <h3 class="about-us__heading">About VIDC</h1>
+      <p class="about-us__description">
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo beatae nam,
         nobis quas quaerat sequi ad at, distinctio provident laborum minus non dolorum
         nobis quas quaerat sequi ad at, distinctio provident laborum minus non dolorum
@@ -190,7 +190,7 @@
         nobis quas quaerat sequi ad at, distinctio provident laborum minus non dolorum
         nobis quas quaerat sequi ad at, distinctio provident laborum minus non dolorum
       </p>
-      <a href="#" class="btn">KNOW MORE</a>
+      <a href="#" class="footer__knowmore-link">KNOW MORE</a>
     </div>
     
   </div>
@@ -201,20 +201,22 @@
   </main>
   <!-- footer section -->
 <footer class="footer">
-  <img src="./images/Mask Group 2.png" class="footer__grass-picture"  alt="grasspic">
+  <img src="./images/crop.png" class="footer__crop-image"  alt="grasspic">
     <!-- right side form & service list -->
-  <div class="footer__common-container">
-    <div class="footer__main">
+  <div class="footer__wrapper">
+    <div class="footer__container">
       <div class="footer__right-section">
         <div class="footer__news-letter">
-          <label for="mail" class="footer__news-letter-label">Subscribe to our Newsletters</label>
-          <input type="email" placeholder="Enter Email Id">
-          <button class="footer__submit">SUBSCRIBE NOW</button>
+          <form action="">
+            <label for="mail" class="footer__news-letter-label">Subscribe to our Newsletters</label>
+            <input type="email" placeholder="Enter Email Id" class="footer__news-letter-input">
+            <button class="btn btn--newsletter-submit">SUBSCRIBE NOW</button>
+          </form>
         </div>
         <div class="footer__service-container">
           <div class="footer__first-list">
             <ul>
-              <li class="footer__service-head"><a href="#">ABOUT US</a></li>
+              <li class="footer__service-head"><a href="#"><h5 class="footer__service-heading">ABOUT US</h5></a></li>
               <li class="footer__service-title"><a href="#">Establishment</a></li>
               <li class="footer__service-title"><a href="#">Our Mission</a></li>
               <li class="footer__service-title"><a href="#">Our Vision</a></li>
@@ -223,7 +225,7 @@
           </div>
           <div class="footer__second-list">
             <ul>
-              <li class="footer__service-head"><a href="#">Important Links</a></li>
+              <li class="footer__service-head"><a href="#"><h5 class="footer__service-heading">Important Links</h5></a></li>
               <li class="footer__service-title"><a href="#">Annual Reports</a></li>
               <li class="footer__service-title"><a href="#">Circulars</a></li>
               <li class="footer__service-title"><a href="#">Governing Councils</a></li>
@@ -232,7 +234,6 @@
           </div>
           <div class="footer__third-list">            
             <ul>
-                <!-- <li class="footer__head"></li> -->
                 <li class="footer__service-title"><a href="#">Disclosures</a></li>
                 <li class="footer__service-title"><a href="#">Disclaimer</a></li>
                 <li class="footer__service-title"><a href="#">Privacy Policy</a></li>
@@ -241,12 +242,12 @@
           </div>
         </div>
         <div class="footer__last-container">       
-            <span class="footer__copyright-part">
-               This is the official website of Vidarbha Irrigation Development Corporation
-                © Copyright 2019. All rights reserved
+            <span class="footer__copyright-block">
+              <strong>This is the official website of Vidarbha Irrigation Development Corporation</strong> 
+              <span>© Copyright 2019. All rights reserved</span>
             </span>
-
-            <span class="footer__poweredby-part">
+             
+            <span class="footer__poweredby-block">
               <span class="footer__powered">Powered by</span>
               <span>Webwerks Pvt Ltd</span>
             </span>
@@ -259,30 +260,30 @@
             <li>
               <img src="./images/map.png" class="footer__map-location" alt="maplocation">
               <div class="footer__contact-detail ">
-                <h3>Contact Us</h3>
-                <a href="#">Near Old Secretary Building, Sinchan Sewa Bhavan, Civil Lines, Nagpur, Maharashtra 440001</a>
+                <h5 class="footer__contact-head">Contact Us</h5>
+                <a href="https://www.google.com/maps/place/Vidarbha+Irrigation+Development+Corporation/@21.156378,79.0680108,15.75z/data=!4m9!1m2!2m1!1sNear+Old+Secretary+Building,+Sinchan+Sewa+Bhavan,+Civil+Lines,+Nagpur,+Maharashtra+440001!3m5!1s0x3bd4c0f3c0000001:0x6706a66708bdff96!8m2!3d21.1547959!4d79.0708936!15sCllOZWFyIE9sZCBTZWNyZXRhcnkgQnVpbGRpbmcsIFNpbmNoYW4gU2V3YSBCaGF2YW4sIENpdmlsIExpbmVzLCBOYWdwdXIsIE1haGFyYXNodHJhIDQ0MDAwMVpXIlVuZWFyIG9sZCBzZWNyZXRhcnkgYnVpbGRpbmcgc2luY2hhbiBzZXdhIGJoYXZhbiBjaXZpbCBsaW5lcyBuYWdwdXIgbWFoYXJhc2h0cmEgNDQwMDAxkgEXbG9jYWxfZ292ZXJubWVudF9vZmZpY2WaASNDaFpEU1VoTk1HOW5TMFZKUTBGblNVUkpkSEJMU1VWUkVBRQ" class="footer__contact-title">Near Old Secretary Building, Sinchan Sewa Bhavan, Civil Lines, Nagpur, Maharashtra 440001</a>
               </div>
             </li>
             <li>
                 <img src="./images/mobile.png" class="footer__mobile"  alt="mobile">
               <div class="footer__contact-detail ">
-                <h3> Call Us @</h3>
-                <a href="#">0712 256 0347</a>
+                <h5 class="footer__mobile-head"> Call Us @</h5>
+                <a href="tel:0712 256 0347" class="footer__mobile-title" >0712 256 0347</a>
               </div>
               </i>
             </li>
             <li>
               <img src="./images/envelope.png" class="footer__envelope" alt="envelope">
-              <div class="footer__contact-detail ">
-                <h3>Email Us @</h3>
-                <a href="#">help@vidc.in</a>
+              <div class="footer__contact-detail">
+                <h5 class="footer__email-head ">Email Us @</h5>
+                <a href="mailto:help@vidc.in" class="footer__email-title">help@vidc.in</a>
               </div>
               </i>
             </li>
           </ul>
-          <div class="footer__social-handle">
-            <h3 class="footer__title">Follow Us</h3>
-            <ul class="footer__social-platform">
+          <div class="footer__follows">
+            <h4 class="footer__follows-title">Follow Us</h4>
+            <ul class="footer__social-medialinks">
               <li><a href="#"><i class="fa fa-facebook-official fa-2x social_logo"></i></a></li>
               <li><a href="#"><i class="fa fa-youtube  fa-2x  social_logo"></i></a></li>
               <li><a href="#"><i class="fa fa-twitter  fa-2x  social_logo"></i></a></li>
